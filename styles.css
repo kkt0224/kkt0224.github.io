@@ -1,0 +1,210 @@
+/* 
+   Classic Academic Theme CSS
+   Focus: Traditional typography, high contrast, clean minimalist layout, like a physical paper.
+*/
+
+:root {
+    --text-color: #111111;
+    --text-muted: #444444;
+    --bg-color: #f4f4f4; /* Slightly grey outside the paper */
+    --paper-bg: #ffffff;
+    --link-color: #003366; /* Classic academic dark blue */
+    --link-hover: #cc0000; /* Traditional red highlight on hover */
+    --border-color: #cccccc;
+    
+    /* Academic Serif Fonts (Google Web Fonts) */
+    /* 영문은 Lora, 한글은 Noto Serif KR(구글 본명조 오픈소스) 사용 */
+    --heading-font: 'Lora', 'Noto Serif KR', 'Georgia', serif;
+    --body-font: 'Noto Serif KR', 'Times New Roman', serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Main Wrapper - Mimics an A4 paper */
+.paper-container {
+    max-width: 1050px;
+    margin: 50px auto;
+    padding: 50px 70px;
+    background-color: var(--paper-bg);
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Very subtle drop shadow */
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-family: var(--heading-font);
+    font-weight: 600;
+    color: #222;
+}
+
+h1 {
+    font-size: 1.6rem;
+    margin: 0 0 5px 0;
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 5px;
+}
+
+/* Links */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+}
+
+/* Profile / Header Area */
+.header {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.profile-photo {
+    flex-shrink: 0;
+}
+
+.profile-photo img {
+    display: block;
+    width: 150px;
+    height: 190px;
+    object-fit: cover;
+    border: 1px solid var(--border-color);
+    padding: 3px; /* Mimics a classic photo mount border */
+}
+
+.profile-info {
+    flex-grow: 1;
+}
+
+.profile-info .title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 0 0 4px 0;
+}
+
+.profile-info .affiliation {
+    font-style: italic;
+    color: var(--text-muted);
+    margin: 0 0 15px 0;
+}
+
+.contact-info p {
+    margin: 4px 0;
+    font-size: 0.95rem;
+    font-family: var(--body-font);
+}
+
+.contact-info .links {
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+/* Horizontal Rule connecting sections */
+hr {
+    border: 0;
+    height: 1px;
+    background-color: var(--border-color);
+    margin: 35px 0;
+}
+
+/* Generic Content Styles */
+p {
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: justify; /* Justified text is a staple of academia */
+}
+
+/* Unordered Lists */
+.bullet-list {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.bullet-list li {
+    margin-bottom: 8px;
+}
+
+/* Tables for Experience/Education */
+.classic-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.classic-table td {
+    vertical-align: top;
+    padding-bottom: 18px;
+}
+
+.year-col {
+    white-space: nowrap;
+    width: 150px;
+    font-weight: 600;
+}
+
+/* Ordered Lists for Publications */
+.publication-list {
+    padding-left: 20px;
+}
+
+.publication-list li {
+    margin-bottom: 18px;
+    line-height: 1.5;
+}
+
+/* Footer Section */
+.footer {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    border-top: 1px solid var(--border-color);
+    padding-top: 15px;
+}
+
+/* Mobile Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .paper-container {
+        margin: 0;
+        padding: 30px 20px;
+        box-shadow: none;
+        border: none;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    p {
+        text-align: left; /* Justify looks bad on narrow screens */
+    }
+
+    .classic-table, .classic-table tbody, .classic-table tr, .classic-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .year-col {
+        padding-bottom: 2px;
+        color: var(--text-muted);
+    }
+}
