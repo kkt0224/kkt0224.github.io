@@ -1,12 +1,377 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitae Kim | Researcher</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- 구글 폰트 (오픈소스라 상업적/개인적 용도 모두 무료입니다) -->
+    <!-- 한글 지원을 위한 Noto Serif KR(본명조)과 영문용 Lora 조합 -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Noto+Serif+KR:wght@400;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-  <p>Hello, World!</p>
+    <div class="paper-container">
+        <!-- Header / Profile Section -->
+        <header class="header">
+            <div class="profile-photo">
+                <!-- Replace src with your image path -->
+                <img src="Picture.jpg" alt="Profile Picture">
+            </div>
+            <div class="profile-info">
+                <h1>Dr. Kitae Kim</h1>
+                <p class="title">Researcher</p>
+                <p class="affiliation">Electronics and Telecommunications Research Institute</p>
+
+                <div class="contact-info">
+                    <p>Email: <a href="mailto:kt0224@etri.re.kr">kt0224@etri.re.kr</a></p>
+                    <p>Address: 218, Gajeong-ro, Yuseong-gu, Daejeon, Republic of Korea</p>
+                    <p class="links">
+                        <a href="https://scholar.google.com/citations?user=oM42ZZIAAAAJ&hl=en" target="_blank">Google
+                            Scholar</a> &nbsp;&bull;&nbsp;
+                        <a href="#">CV (PDF)</a> &nbsp;&bull;&nbsp;
+                        <a href="https://www.linkedin.com/in/kitae-kim-53176013b/" target="_blank">LinkedIn</a>
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <hr>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am currently a Researcher at the Electronics and Telecommunications Research Institute (ETRI) in South
+                Korea.
+                I received my B.S., M.S., and Ph.D. degrees in Computer Science from Kyung Hee University.
+                Before joining ETRI, I served as a Postdoctoral Researcher at Kyung Hee University and expanded my
+                research horizons as a Visiting Researcher at the Bradley Department of Electrical and Computer
+                Engineering at Virginia Tech.
+                My research primarily focuses on AI-based networks, encompassing both wired and wireless communication
+                systems.
+                I am highly proficient in applying mathematical optimization and AI-based solutions to tackle complex
+                networking and system challenges.</p>
+        </section>
+
+        <!-- Research Interests -->
+        <section id="research-interests">
+            <h2>Research Interests</h2>
+            <ul class="bullet-list">
+                <li><strong>AI-based Networks:</strong> Intelligent resource management and protocol design for wired
+                    and wireless networks.</li>
+                <li><strong>Mathematical Optimization:</strong> Formulating and solving complex network problems using
+                    robust optimization techniques.</li>
+                <li><strong>AI-based Solutions:</strong> Developing advanced machine learning and deep learning models
+                    for practical system implementations.</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- Experience -->
+        <section id="experience">
+            <h2>Experience</h2>
+            <table class="classic-table">
+                <tr>
+                    <td class="year-col">2025.07 - Present</td>
+                    <td>
+                        <strong>Researcher</strong><br>
+                        <em>Electronics and Telecommunications Research Institute (ETRI), Republic of Korea</em>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="year-col">2024.05 - 2025.06</td>
+                    <td>
+                        <strong>Postdoctoral Researcher</strong><br>
+                        <em>Kyung Hee University, Republic of Korea</em>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="year-col">2023.12 - 2024.04</td>
+                    <td>
+                        <strong>Visiting Researcher</strong><br>
+                        <em>Bradley Department of Electrical and Computer Engineering, Virginia Tech, USA</em>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- Awards -->
+        <section id="awards">
+            <h2>Honors & Awards</h2>
+            <table class="classic-table">
+                <tr>
+                    <td class="year-col">2023</td>
+                    <td><strong>Student Best Paper Award</strong><br><em>Asia-Pacific Network Operations and Management
+                            Symposium – IEICE</em></td>
+                </tr>
+                <tr>
+                    <td class="year-col">2023</td>
+                    <td><strong>Best Paper Award</strong><br><em>International Conference on Information
+                            Networking-KIISE</em></td>
+                </tr>
+                <tr>
+                    <td class="year-col">2022</td>
+                    <td><strong>Paper Award</strong><br><em>US-Korea Conference(UKC)-KSEA</em></td>
+                </tr>
+                <tr>
+                    <td class="year-col">2021</td>
+                    <td><strong>Best Paper Presentation Award</strong><br><em>Korea Computer Congress(KCC)-KIISE</em>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="year-col">2017</td>
+                    <td><strong>Best Paper Award</strong><br><em>Korea Software Congress(KSC)-KIISE</em></td>
+                </tr>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- Publications -->
+        <section id="publications">
+            <h2>Publications</h2>
+            <h3>International Journal</h3>
+            <ol class="publication-list">
+                <li><strong>Kitae Kim</strong>, Yan Kyaw Tun, Md. Shirajum Munir, Walid Saad and Choong Seon Hong,
+                    "Vision and Causal Learning based Channel Estimation for THz Communications," in IEEE Transactions
+                    on Mobile Computing(Accepted/Early Access)</li>
+                <li>Avi Deb Raha, <strong>Kitae Kim</strong>, Mrityunjoy Gain, Apurba Adhikary, Zhu Han, Eui-Nam Huh and
+                    Choong Seon Hong, "Security Risks in Vision-baed Beam Prediction: From Spacial Proxy Attacks to
+                    Feature Refinement," in IEEE Transactions on Wireless Communication, Vol. 25, Nov. 2025
+                    <strong>(Corresponding author)</strong>
+                </li>
+                <li>Avi Deb Raha, <strong>Kitae Kim</strong>, Apurba Adhikary, Mrityunjoy Gain, Yu Qiao, Zhu Han and
+                    Choong Seon Hong, "Boosting Federated Domain Generalization: Understanding the Role of Advanced
+                    Pretrained Architectures," in IEEE Internet of Things Journal, Vol. 12, Issue 17, Sep. 2025
+                    <strong>(Corresponding author)</strong>
+                </li>
+                <li>Loc X. Nguyen, Sheikh Salman Hassan, Yan Kyaw Tun, <strong>Kitae Kim</strong>, Zhu Han and Choong
+                    Seon Hong, "Semantic Communication Enabled 6G-NTN Framework: A Novel Denoising and Gateway Hop
+                    Integration Mechanism," in IEEE Transactions on Wireless Communication(Accepted)
+                    <strong>(Corresponding author)</strong>
+                </li>
+                <li>Avi Deb Raha, <strong>Kitae Kim</strong>, Apurba Adhikary, Mrityunjoy Gain, Zhu Han and Choong Seon
+                    Hong, "Advancing Ultra-Reliable 6G: Transformer and Semantic Localization Empowered Robust
+                    Beamforming in Millimeter-Wave Communications," in IEEE Transactions on Vehicular Technology(Early
+                    Access) <strong>(Corresponding author)</strong></li>
+                <li>Loc X Nguyen, <strong>Kitae Kim</strong>, Ye Lin Tun, Sheikh Salman Hassan, Yan Kyaw Tun, Zhu han
+                    and Choong Seon Hong, "Optimizing Multi-User Semantic Communication via Transfer Learning and
+                    Knowledge Distillation," in IEEE Communications Letters (Early Access) <strong>(Corresponding
+                        author)</strong></li>
+                <li>Nway Nway Ei, <strong>Kitae Kim</strong>, Yan Kyaw Tun, Zhu Han and Choong Seon Hong, "Data Service
+                    Maximization in Space-Air-Ground Integrated 6G Networks," in IEEE Communications Letters (Early
+                    Access) <strong>(Corresponding author)</strong></li>
+                <li>Md. Shirajum Munir, <strong>Kitae Kim</strong>, Sarder Fakhrul Abedin, Md. Golam Rabiul Alam, Walid
+                    Saad and Choong Seon Hong, "Cognitive Behavior-in-the-Loop: Towards an Attentive Driving in
+                    Intelligent Transportation Systems," in IEEE Transactions on Industrial Informatics(Early Access)
+                    <strong>(Corresponding author)</strong>
+                </li>
+                <li>Md. Shirajum Munir, <strong>Kitae Kim</strong>, Apurba Adhikary, Walid Saad, Sachin Shetty,
+                    Seong-Bae Park and Choong Seon Hong, "Neuro-Symbolic Explainable Artificial Intelligence Twin for
+                    Zero-Touch IoE in Wireless Network," in IEEE Internet of Things Journal, Vol. 10, Issue 24, Dec.
+                    2023.</li>
+                <li><strong>Kitae Kim</strong>, Yan Kyaw Tun, Md. Shirajum Munir, Walid Saad and Choong Seon Hong, "Deep
+                    Reinforcement Learning for Channel Estimation in RIS-Aided Wireless Networks," in IEEE
+                    Communications Letters, Vol. 27, Issue 8, August 2023.</li>
+                <li>Yan Kyaw Tun, Tri Nguyen Dang, <strong>Kitae Kim</strong>, Madyan Alsenwi, Walid Saad and Choong
+                    Seon Hong, "Collaboration in the Sky: A Distributed Framework for Task Offloading and Resource
+                    Allocation in Multi-Access Edge Computing," in IEEE Internet of Things Journal, vol. 9, no. 23, pp.
+                    24221-24235, 1 Dec. 2022.</li>
+                <li>Md. Shirajum Munir, <strong>Kitae Kim</strong>, Kyi Thar, Dusit Niyato and Choong Seon Hong, "Risk
+                    Adversarial Learning System for Connected and Autonomous Vehicle Charging," in IEEE Internet of
+                    Things Journal, vol. 9, no. 16, pp. 15184-15203, 15 Aug. 2022.</li>
+                <li>Tri Nguyen Dang, <strong>Kitae Kim</strong>, Latif Ullah Khan, S. M. Ahsan Kazmi, Zhu Han and Choong
+                    Seon Hong, "On-Device Computational Caching-Enabled Augmented Reality for 5G and Beyond: A
+                    Contract-Theory-Based Incentive Mechanism," in IEEE Internet of Things Journal, vol. 8, no. 24, pp.
+                    17382-17394, 15 Dec. 2021.</li>
+                <li>Shasi Raj Pandey, <strong>Kitae Kim</strong>, Madyan Alsenwi, Yan Kyaw Tun, Zhu Han and Choong Seon
+                    Hong, "Latency-Sensitive Service Delivery With UAV-Assisted 5G Networks," in IEEE Wireless
+                    Communications Letters, vol. 10, no. 7, pp. 1518-1522, July 2021.</li>
+                <li>Aunas Manzoor, <strong>Kitae Kim</strong>, Shashi Raj Pandey, S.M. Ahsan Kazmi, Nguyen H. Tran,
+                    Walid Saad and Choong Seon Hong, "Ruin Theory for Energy-Efficient Resource Allocation in
+                    UAV-Assisted Cellular Networks," in IEEE Transactions on Communications, vol. 69, no. 6, pp.
+                    3943-3956, Jun. 2021.</li>
+                <li>Anselme Ndikumana, Nguyen H. Tran, Do Hyeon Kim, <strong>Kitae Kim</strong> and Choong Seon Hong,
+                    "Deep Learning Based Caching for Self-Driving Cars in Multi-Access Edge Computing," in IEEE
+                    Transactions on Intelligent Transportation Systems, vol. 22, no. 5, pp. 2862-2877, May 2021.</li>
+                <li>Chit Wutyee Zaw, Shashi Raj Pandey, <strong>Kitae Kim</strong> and Choong Seon Hong, "Energy-Aware
+                    Resource Management for Federated Learning in Multi-Access Edge Computing Systems," in IEEE Access,
+                    vol. 9, pp. 34938-34950, Jan. 2021.</li>
+                <li>Tra Huong Thi Le, Nguyen H. Tran, Tuan LeAnh, Thant Zin Oo, <strong>Kitae Kim</strong>, Sholei Ren
+                    and Choong Seon Hong, "Auction Mechanism for Dynamic Bandwidth Allocation in Multi-Tenant Edge
+                    Computing," in IEEE Transactions on Vehicular Technology, vol. 69, no. 12, pp. 15162-15176, Dec.
+                    2020.</li>
+                <li>Minh N. H. Nguyen, Chi Wutyee Zaw, <strong>Kitae Kim</strong>, Nguyen H. Tran and Choong Seon Hong,
+                    "Let's Share the Resource When We’re Co-Located: Colocation Edge Computing," in IEEE Transactions on
+                    Vehicular Technology, vol. 69, no. 5, pp. 5618-5633, May 2020.</li>
+                <li>Saeed Ullah, <strong>Kitae Kim</strong>, Aunas Manzoor, Latif Ullah Khan, S. M. Ahsan Kazmi and
+                    Choong Seon Hong, "Quality Adaptation and Resource Allocation for Scalable Video in D2D
+                    Communication Networks," in IEEE Access, vol. 8, pp. 48060-48073, Mar. 2020.</li>
+                <li>Kyi Thar, Thant Zin Oo, Yan Kyw Tun, Do Hyeon Kim, <strong>Kitae Kim</strong> and Choong Seon Hong,
+                    "A Deep Learning Model Generation Framework for Virtualized Multi-Access Edge Cache Management," in
+                    IEEE Access, vol. 7, pp. 62734-62749, May 2019</li>
+            </ol>
+
+            <h3>Domestic Journal</h3>
+            <ol class="publication-list">
+                <li>Umer Majeed, <strong>Kitae Kim</strong> and Choong Seon Hong, "Mining Pool Selection Strategy in
+                    Blockchain Networks: A Probabilistic Approach," in KIISE Transactions on Computing Practices, vol.
+                    26, pp. 280-285, Jun 2020</li>
+            </ol>
+
+            <h3>International Conference</h3>
+            <ol class="publication-list">
+                <li><strong>Kitae Kim</strong>, Yan Kyaw Tun, Md. Shirajum Munir, Walid Saad and Choong Seon Hong,
+                    "Pilot Optimization and Channel Estimation Scheme for Semantic Communication: A Framework for Edge
+                    Intelligence," 37th IEEE/IFIP Network Operations and Management Symposium (NOMS 2024), Seoul, South
+                    Korea, May. 2024. <strong>(BK IF =1)</strong></li>
+                <li>Mritinjoy Gain, Avi Deb Raha, Apurba Adhikary, <strong>Kitae Kim</strong> and Choong Seon Hong,
+                    "Open RAN Embracing Continual Learning: Towards NextG Adaptive Traffic Analysis," 37th IEEE/IFIP
+                    Network Operations and Management Symposium (NOMS 2024), Seoul, South Korea, May. 2024. <strong>(BK
+                        IF =1)</strong></li>
+                <li>Yu Min Park, <strong>Kitae Kim</strong>, Seong-Bae Park and Choong Seon Hong, "Trajectory
+                    Optimization of Multiple Urban Air Mobility for Reliable Communications with Integrated
+                    Space-Air-Ground Network," 2023 International Conference on Information Networking (ICOIN), Bangkok,
+                    Thailand, Jan. 2023.</li>
+                <li>Jin Seon Park, <strong>Kitae Kim</strong>, Seong-Bae Park and Choong Seon Hong, "Abnormal Client
+                    Detection Federated Learning Using Image Vectors," 2023 International Conference on Information
+                    Networking (ICOIN), Bangkok, Thailand, Jan. 2023</li>
+                <li>Tri Nguyen Dang Loc X. Nguyen, Huy Q. Le, <strong>Kitae Kim</strong>, S. M. Ahsan Kazmi, Seong-Bae
+                    Park, Eui-Nam Huh and Choong Seon Hong, "Semantic Communication for AR-based Services in 5G and
+                    Beyond," 2023 International Conference on Information Networking (ICOIN), Bangkok, Thailand, Jan.
+                    2023.</li>
+                <li>Sheikh Salman Hassan, Yu Min Park, <strong>Kitae Kim</strong>, Sang Hoon Hong and Choong Seon Hong,
+                    "Seamless and Efficient Resources Allocation in 6G Satellite Networks Servicing Remote User
+                    Equipments," 2023 International Conference on Information Networking (ICOIN), Bangkok, Thailand,
+                    Jan. 2023.</li>
+                <li>Chu Myaet Thwal, Ye Lin Tun, <strong>Kitae Kim</strong>, Seong-Bae Park and Choong Seon Hong,
+                    "Transformers with Attentive Federated Aggregation for Time Series Stock Forecasting," 2023
+                    International Conference on Information Networking (ICOIN), Bangkok, Thailand, Jan. 2023.</li>
+                <li><strong>Kitae Kim</strong> and Choong Seon Hong, "Pruned Autoencoder based mmWave Channel Estimation
+                    in RIS-Assisted Wireless Networks," 2022 23rd Asia-Pacific Network Operations and Management
+                    Symposium (APNOMS), Takamatsu, Japan, Sept. 2022.</li>
+                <li><strong>Kitae Kim</strong> and Choong Seon Hong, "Vehicle Platoon Networks using RIS: Learning-based
+                    Approach," 2022 US-KOREA Conference on Science, Technology, and Entrepreneurship (UKC 2022),
+                    Washington D.C, USA, Aug. 2022.</li>
+                <li>Yan Kyaw Tun, <strong>Kitae Kim</strong>, Pyae Sone Aung, Madyan Alsenwi and Choong Seon Hong, "An
+                    Efficient Resource Sharing Model for Multi-UAV-Assisted Wireless Networks," 2021 22nd Asia-Pacific
+                    Network Operations and Management Symposium (APNOMS), Tainan, Taiwan, Sept. 2021.</li>
+                <li>Shashi Raj Pandey, <strong>Kitae Kim</strong>, Madyan Alsenwi, Yan Kyaw Tun and Choong Seon Hong, "A
+                    Crowd-enabled Task Execution Approach in UAV Networks Towards Fog Computing," 2021 IEEE
+                    International Conference on Big Data and Smart Computing (BigComp), Jeju Island, Korea (South), Jan.
+                    2021.</li>
+                <li>Tra Houng Thi Le, Nguyen H. Tran, Yan Kyaw Tun, Oanh Tran Thi Kim, <strong>Kitae Kim</strong> and
+                    Choong Seon Hong, "Sharing Incentive Mechanism, Task Assignment and Resource Allocation for Task
+                    Offloading in Vehicular Mobile Edge Computing," NOMS 2020 - 2020 IEEE/IFIP Network Operations and
+                    Management Symposium, Budapest, Hungary, Apr. 2020. <strong>(BK IF =1)</strong></li>
+                <li><strong>Kitae Kim</strong>, Yu Min Park and Choong Seon Hong, "Machine Learning Based Edge-Assisted
+                    UAV Computation Offloading for Data Analyzing," 2020 International Conference on Information
+                    Networking (ICOIN), Barcelona, Spain, Jan. 2020.</li>
+                <li>Luyao Zou, Md. Shirajum Munir, <strong>Kitae Kim</strong> and Choong Seon Hong, "Day-ahead Energy
+                    Sharing Schedule for the P2P Prosumer Community Using LSTM and Swarm Intelligence," 2020
+                    International Conference on Information Networking (ICOIN), Barcelona, Spain, Jan. 2020.</li>
+                <li>Do Hyeon Kim, Anselme Ndikumana, S.M Ahsan Kazmi, <strong>Kitae Kim</strong>, Md. Shirajum Munir,
+                    Walid Saad and Choong Seon Hong, "Pricing Mechanism for Virtualized Heterogeneous Resources in
+                    Wireless Network Virtualization," 2020 International Conference on Information Networking (ICOIN),
+                    Barcelona, Spain, Jan. 2020.</li>
+                <li><strong>Kitae Kim</strong> and Choong Seon Hong, "Optimal Task-UAV-Edge Matching for Computation
+                    Offloading in UAV Assisted Mobile Edge Computing," 2019 20th Asia-Pacific Network Operations and
+                    Management Symposium (APNOMS), Matsue, Japan, Sept. 2019</li>
+                <li>Minh N. H. Nguyen, Chit Wutyee Zaw, <strong>Kitae Kim</strong> and Choong Seon Hong, "Joint User
+                    Association and Server Scaling in Multi-access Edge Computing," 2019 20th Asia-Pacific Network
+                    Operations and Management Symposium (APNOMS), Matsue, Japan, Sept. 2019.</li>
+                <li><strong>Kitae Kim</strong>, Jared Lynskey, Seokwon Kang and Choong Seon Hong, "Prediction Based
+                    Sub-Task Offloading in Mobile Edge Computing," 2019 International Conference on Information
+                    Networking (ICOIN), Kuala Lumpur, Malaysia, Jan. 2019.</li>
+                <li>Madyan Alsenwi, Shashi Raj Pandey, Yan Kyaw Tun, <strong>Kitae Kim</strong> and Choong Seon Hong, "A
+                    Chance Constrained Based Formulation for Dynamic Multiplexing of eMBB-URLLC Traffics in 5G New
+                    Radio," 2019 International Conference on Information Networking (ICOIN), Kuala Lumpur, Malaysia,
+                    Jan. 2019.</li>
+            </ol>
+
+            <h3>Domestic Conference</h3>
+            <ol class="publication-list">
+                <li><strong>Kitae Kim</strong>, Choong Seon Hong, "Channel State Information Reference Signal Allocation
+                    Scheme to enhance Deep Learning based Channel Estimation Accuracy," 2021 Korea Software Congress
+                    (KSC2021), Pyeong Chang, Korea(South), Dec. 2021</li>
+                <li>Kyi Thar, <strong>Kitae Kim</strong>, Ye Lin Tun, Chu Myaet Thwal, Choong Seon Hong, "Channel State
+                    Information Reference Signal Allocation Scheme to enhance Deep Learning based Channel Estimation
+                    Accuracy," 2021 Korea Computer Congress (KCC2021), Jeju Island, Korea(South), Jun. 2021</li>
+                <li><strong>Kitae Kim</strong>, Seong-Bae Park and Choong Seon Hong, "Reinforcement Learning based
+                    Wireless Resource Allocation for High-bandwidth and Low-latency Services in 5G Networks," 2021 Korea
+                    Computer Congress (KCC2021), Jeju Island, Korea(South), Jun. 2021</li>
+                <li>Kyi Thar, <strong>Kitae Kim</strong>, Ye Lin Tun, Chu Myaet Thwal and Choong Seon Hong, "Evolvable
+                    symptom-disease investigator for smart healthcare decision support system," 2020 Korea Computer
+                    Congress (KCC2020), Jeju Island, Korea(South), Jun. 2020</li>
+                <li><strong>Kitae Kim</strong> and Choong Seon Hong, "A Study on Matching Between UAV and Task in
+                    UAV-Assisted Mobile Edge Computing," 2019 Korea Software Congress (KCC2019), Pyeong Chang,
+                    Korea(South), Dec. 2019</li>
+                <li>Md. Shirajum Munir, Sarder Fakhrul Abedin, <strong>Kitae Kim</strong> and Choong Seon Hong, "Towards
+                    Edge Intelligence: Real-Time Driver Safety in Smart Transportation System," 2019 Korea Computer
+                    Congress (KCC2019), Jeju Island, Korea(South), Jun. 2019</li>
+                <li><strong>Kitae Kim</strong> and Choong Seon Hong, "A Study on Reinforcement Learning-based UAV-Edge
+                    Collaborative Task Offloading Method," 2019 Korean Network Operation and Management (KNOM2019),
+                    Daegu, Korea(South), May. 2019</li>
+                <li><strong>Kitae Kim</strong> and Choong Seon Hong, "A study on task offloading method using machine
+                    learning in SDN-based mobile edge computing environment," 2018 Korean Network Operation and
+                    Management Workshop (KNOM Workshop2018), Seoul, Korea(South), Nov. 2018</li>
+                <li><strong>Kitae Kim</strong> and Choong Seon Hong, "Optimal Edge Node Selection Mechanism for SDN
+                    based Mobile Service Using Machine Learning," 2018 Korea Computer Congress (KCC2018), Jeju Island,
+                    Korea(South), Jun. 2018</li>
+                <li><strong>Kitae Kim</strong>, Joo Yeon Lee and Choong Seon Hong, "QoS-Aware Dynamic Routing Strategy
+                    in Software-Defined Network Environment using Deep Q-Learning," 2017 Korea Software Congress
+                    (KCC2017), Busan, Korea(South), Dec. 2017</li>
+                <li><strong>Kitae Kim</strong> and Choong Seon Hong, "Machine Learning and Feature Based Traffic
+                    Classification in Software Defined Network Environment," 2017 Korea Computer Congress (KCC2017),
+                    Jeju Island, Korea(South), Jun. 2017</li>
+            </ol>
+
+            <h3>International Patent</h3>
+            <ol class="publication-list">
+                <li>"A system for federated learning and a method of operation thereof," Choong Seon Hong, Umer Majeed,
+                    <strong>Kitae Kim</strong>, Seong-Bae Park and Choong Seon Hong, PCT/KR Application 2021/09513, 23
+                    Dec. 2021
+                </li>
+                <li>"SDN-based slicing method in hierarchical cluster UAV network," Choong Seon Hong, <strong>Kitae
+                        Kim</strong>, PCT/KR Application 2020/016967, 26 Nov. 2020</li>
+            </ol>
+
+            <h3>Domestic Patent</h3>
+            <ol class="publication-list">
+                <li>"Method of machine learning based unmanned aerial vehicle mobile edge server collaborative task
+                    matching and offloading", Choong Seon Hong, <strong>Kitae Kim</strong>, KR Patent Publication,
+                    10-2508504-0000, 01 July. 2022</li>
+                <li>"SDN-based slicing method in hierarchical cluster UAV network", Choong Seon Hong, <strong>Kitae
+                        Kim</strong>, KR Patent Publication, 10-2417951-0000, 01 July. 2022</li>
+                <li>"A system for federated learning and a method of operation thereof," Choong Seon Hong, Umer Majeed,
+                    <strong>Kitae Kim</strong>, Seong-Bae Park and Choong Seon Hong, KR Patent Application,
+                    10-2021-0184384, 23 Dec. 2021
+                </li>
+                <li>"A base station and method for providing 360°video content", Choong Seon Hong, Nguyen Dang Tri,
+                    <strong>Kitae Kim</strong>, KR Patent Application, 10-2021-018375, 21 Dec. 2021
+                </li>
+                <li>"Method and System for coexistence of eMBB and uRLLC in 5G Network", Choong Seon Hong, Anupam Kumar
+                    Bairagi, <strong>Kitae Kim</strong>, Md. Shirajum Munir, KR Patent Publication, 10-2109709-0000, 06
+                    May. 2020</li>
+                <li>"Method for intelligent day-ahead energy sharing scheduling of the P2P prosumer community in smart
+                    grid", Choong Seon Hong, Zou Luyao, <strong>Kitae Kim</strong>, KR Patent Application,
+                    10-2019-0152771, 25 Nov. 2019</li>
+            </ol>
+
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2026 Kitae Kim. Last updated: April 2026.</p>
+        </footer>
+    </div>
 </body>
+
 </html>
