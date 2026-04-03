@@ -117,6 +117,49 @@ a:hover {
     font-size: 0.95rem;
 }
 
+/* Navigation Menu */
+.top-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    border-top: 1px solid var(--border-color);
+    padding-top: 20px;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 1.05rem;
+    font-family: var(--heading-font);
+    position: relative;
+    transition: color 0.2s ease-in-out;
+}
+
+.top-nav a:hover {
+    color: var(--link-hover);
+}
+
+.top-nav a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--link-hover);
+    transition: width 0.3s ease-in-out;
+}
+
+.top-nav a:hover::after {
+    width: 100%;
+}
+
 /* Horizontal Rule connecting sections */
 hr {
     border: 0;
